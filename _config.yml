@@ -4,8 +4,8 @@ short_title: Open Data Handbook
 description: |
   Guides, case studies and resources for government & civil society
   on the "what, why & how" of open data.
-baseurl: ""
-url: "http://jjediny.github.io/opendatahandbook/" # the base hostname & protocol for your site
+baseurl: "http://jjediny.github.io/opendatahandbook/"
+url: "" # the base hostname & protocol for your site
 github_username:  jjediny
 github_repo:  opendatahandbook
 paypal: admin@okfn.org
