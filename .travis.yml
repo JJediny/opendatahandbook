@@ -1,0 +1,14 @@
+language: ruby
+
+script: "bundle exec rake"
+
+notifications:
+  email:
+    - john.jediny@gmail.com
+
+branches:
+  only:
+    - gh-pages
+
+git:
+  submodules: false
