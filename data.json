@@ -1,0 +1,45 @@
+---
+layout: default
+
+context: "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld"
+type: "dcat:Catalog"
+conformsTo: "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld"
+describedBy: "https://project-open-data.cio.gov/v1.1/schema/catalog.json"
+---
+{
+    "@context":"{{ page.context }}",
+    "@type":"{{ page.type }}",
+    "conformsTo":"{{ page.conformsTo }}",
+    "describedBy": "{{ page.describedBy }}",
+    "dataset": [{% for d in site.categories.datasets %}
+    {
+        "@type":"dcat:Dataset",
+        "accessLevel": "public",
+        "identifier": "{{ d.identifier }}",
+        "title": "{{ d.title }}",
+        "rights": "-",
+        "bureauCode": [{% for code in d.bureauCode %}"{{ code }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "programCode": [{% for code in d.programCode %}"{{ code }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "describedBy": "{{ d.describedBy }}",
+        "description": "{{ d.description }}",
+        "distribution":[{% for endpoint in d.distribution %}{
+            "format":"{{ endpoint.format }}",
+            "mediaType":"{{ endpoint.mediaType }}",
+            "accessURL":"{{ endpoint.accessURL }}",
+            "downloadURL":"{{ endpoint.downloadURL }}",
+            "type":"{{ endpoint.type }}"
+        }{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "keyword": [{% for kw in d.keywords %}"{{ kw }}"{% unless forloop.last %},{% endunless %}{% endfor %}],
+        "publisher": {
+            "@type":"{{ d.publisher.type }}",
+            "name": "{{ d.publisher.name }}"
+        },
+        "spatial": "{{ d.spatial }}",
+        "temporal": "{{ d.temporal }}",
+        "contactPoint": {
+            "@type":"{{ d.poc.type }}",
+            "fn": "{{ d.poc.fn }}",
+            "hasEmail": "{{ d.poc.hasEmail }}"
+        }
+    }{% unless forloop.last %},{% endunless %}{% endfor %}]
+}

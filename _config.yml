@@ -2,14 +2,12 @@
 title: The Open Data Handbook
 short_title: Open Data Handbook
 description: |
-  Guides, case studies and resources for government & civil society
-  on the "what, why & how" of open data.
+  What's new... and what's next with U.S. Project Open Data
 baseurl: "http://jjediny.github.io/opendatahandbook/"
 url: "" # the base hostname & protocol for your site
 github_username:  jjediny
 github_repo:  opendatahandbook
-paypal: admin@okfn.org
-contact: https://discuss.okfn.org/c/open-data-handbook
+contact:
 
 gems:
   - jekyll-redirect-from
@@ -73,65 +71,11 @@ permalink: pretty
 
 languages:
   -
-    - de
-    - Deutsch
-  -
-    - el
-    - Ελληνικά
-  -
     - en
     - English
   -
     - es
     - Español/Castellano
-  -
-    - fr
-    - Français
-  -
-    - he
-    - עברית
-  -
-    - hr
-    - hrvatski
-  -
-    - id
-    - Bahasa
-  -
-    - is
-    - Íslenska
-  -
-    - it
-    - Italiano
-  -
-    - ja
-    - 日本語
-  -
-    - ko
-    - 한국어
-  -
-    - lt
-    - Lietuvių
-  -
-    - lv
-    - Latviešu
-  -
-    - nl_BE
-    - Nederlands (Belgisch)
-  -
-    - pt_BR
-    - Português Brasileiro
-  -
-    - ro
-    - Română
-  -
-    - ru
-    - Pyccĸий
-  -
-    - zh_CN
-    - 中国语文
-  -
-    - zh_TW
-    - 繁體中文
 
 toc:
   - guide
@@ -161,7 +105,7 @@ meta:
     label: value-stories
     output: true
     has_translation: true
-    title: Open Data Value Stories
+    title: Value
     languages:
       - en
   glossary:
@@ -169,7 +113,7 @@ meta:
     output: true
     has_translation: true
     translate_link: true
-    title: Open Data Glossary
+    title: Glossary
     languages:
       - en
       - es
