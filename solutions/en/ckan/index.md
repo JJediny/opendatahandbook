@@ -1,20 +1,15 @@
 ---
 section: solutions
 layout: apps
-title: Medicine price registry (MPR)
-creators: Code for South Africa 
-website: http://mpr.code4sa.org
+title: CKAN
+creators: Open Knowledge Foundation
+website: http://ckan.org
 image: http://opendatahandbook.org/img/MPR.png
 image_attribution:
 type: Web application
 language: en
-themes: Health, consumerism
-tags: medicines 
-start: 2013
-end: 
-countries: South Africa
-region: Africa
-cost: 
-code: https://github.com/Code4SA/medicine-price-registry
-value_story: 
+themes: Catolog, Harvester
+tags: harvester
+code: https://github.com/ckan/ckan
+value_story:
 ---

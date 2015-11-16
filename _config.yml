@@ -25,38 +25,20 @@ devs:
 
 contributors:
   -
-      name: Daniel Dietrich
-      link: http://ddie.me/
+      name: Open Data Handbook Team
+      link:  http://opendatahandbook.org
   -
-      name: Jonathan Gray
-      link: http://jonathangray.org/
-  -
-      name: Tim McNamara
-      link: http://timmcnamara.co.nz/
-  -
-      name: Antti Poikola
-      link: http://poikola.fi/
-  -
-      name: Rufus Pollock
-      link: http://rufuspollock.org/
-  -
-      name: Julian Tait
-      link: http://www.littlestar.tv/
-  -
-      name: Ton Zijlstra
-      link: http://www.zylstra.org/blog/
-  -
-      name: Sam Smith
-      link: http://samsmith.name/
+      name:  Data.gov Team
+      link: http://data.gov
 
 supporters:
   -
-    name: Shuttleworth Foundation
+    name: General Services Adminstration
     logo: shuttleworth.png
     footer_logo: shuttleworth-footer.png
-    url: https://www.shuttleworthfoundation.org/
+    url: https://www.gsa.gov
   -
-    name: The World Bank
+    name: Federal Geographic Data Committee
     logo: worldbank.png
     footer_logo: worldbank-footer.png
     url: http://www.worldbank.org/
@@ -102,17 +84,17 @@ meta:
       - Region
       - MediaType
   value-stories:
-    label: value-stories
+    label: stories
     output: true
-    has_translation: true
-    title: Value
+    has_translation: false
+    title: Success Stories
     languages:
       - en
   glossary:
     label: glossary
     output: true
-    has_translation: true
-    translate_link: true
+    has_translation: false
+    translate_link: false
     title: Glossary
     languages:
       - en
@@ -201,7 +183,7 @@ defaults:
       edit: true
   -
     scope:
-      path: "value-stories"
+      path: "stories"
     values:
       edit: true
   -
@@ -213,5 +195,5 @@ defaults:
 
 related_projects:
   -
-      name: OpenGovernmentData.org
-      link: http://opengovernmentdata.org/
+      name: OpenDataHandbook.org
+      link: http://opendatahandbook.org/
